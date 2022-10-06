@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+/* PALHETAS 
+
+    #3E45E2 - AZUL 
+    > #636afd - variante
+
+    #EC6255 - SALMÃO
+    >#f17a6f - variante
+
+
+    #ffff - BRANCO
+    
+
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+}
+
+/* links */
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+/* Titulos */
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+/* navbar */
+
+#navbar {
+    width: 100%;
+    background: #EC6255;
+    color: #FFFF;
+    height: 80px;
+    position: fixed;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-items li {
+    padding: 10px;
+}
+
+/* Showcase */
+
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('/img/relogio.jpeg') no-repeat center center/cover;
+    /* Overlay */
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: color;
+}
+
+#showcase-container {
+    text-align: center;
+}
+
+#showcase-container h2 {
+    font-size: 2.5rem;
+}
+
+#showcase-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+/* About */
+#features {
+    width: 100%;
+    background:#f17a6f;
+    color: #eee;
+    padding: 50px;
+}
+
+#features-container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    background: #636afd;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Product */
+#product {
+    width: 100%;
+    padding: 50px;
+    background-color: #ffff;
+}
+
+#product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#items {
+    width: 650px;
+}
+
+#items .item {
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+#items .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+#items .button button{ 
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border-color: #636afd;
+}
+
+
+#items .button h1 {
+    color: #636afd;
+}
+
+/* Footer */
+#footer {
+    background: #fa877d;
+    color: #ffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#contato .iten {
+    display: inline-flex;
+    padding: 25px;
+    font-weight: inherit;
+}
+
+.iten i {
+    display: flex;
+    margin: 2px;
+    padding: 2px;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+} 
+
+body::-webkit-scrollbar-thumb {
+    background: #3E45E2;
+    border-radius: 6px;
+}
